@@ -1,0 +1,3 @@
+log/*
+config/production.yaml
+log/log.txt
