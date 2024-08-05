@@ -3,3 +3,14 @@
 {"level":"ERROR","timestamp":"2024-08-03T23:39:45.083+0700","caller":"initialize/mysql.go:16","msg":"MySQL initialization failed","error":"dial tcp 127.0.0.1:3306: connect: connection refused","stacktrace":"go-ecommerce-backend-api/internal/initialize.checkErrorPanic\n\t/Users/MasterBi/Work/Learn/go-ecommerce-backend-api/internal/initialize/mysql.go:16\ngo-ecommerce-backend-api/internal/initialize.InitMySQL\n\t/Users/MasterBi/Work/Learn/go-ecommerce-backend-api/internal/initialize/mysql.go:29\ngo-ecommerce-backend-api/internal/initialize.Run\n\t/Users/MasterBi/Work/Learn/go-ecommerce-backend-api/internal/initialize/run.go:13\nmain.main\n\t/Users/MasterBi/Work/Learn/go-ecommerce-backend-api/cmd/server/main.go:8\nruntime.main\n\t/usr/local/go/src/runtime/proc.go:271"}
 {"level":"INFO","timestamp":"2024-08-04T00:16:59.624+0700","caller":"initialize/run.go:12","msg":"Logger init success","info":"success"}
 {"level":"INFO","timestamp":"2024-08-04T00:16:59.651+0700","caller":"initialize/mysql.go:30","msg":"MySQL init success","info":"success"}
+{"level":"INFO","timestamp":"2024-08-05T20:17:42.537+0700","caller":"initialize/run.go:12","msg":"Logger init success","info":"success"}
+{"level":"INFO","timestamp":"2024-08-05T20:17:42.615+0700","caller":"initialize/mysql.go:30","msg":"MySQL init success","info":"success"}
+{"level":"INFO","timestamp":"2024-08-05T20:21:02.047+0700","caller":"initialize/run.go:12","msg":"Logger init success","info":"success"}
+{"level":"INFO","timestamp":"2024-08-05T20:21:02.067+0700","caller":"initialize/mysql.go:30","msg":"MySQL init success","info":"success"}
+{"level":"INFO","timestamp":"2024-08-05T20:21:02.183+0700","caller":"initialize/redis.go:46","msg":"score","score":"100"}
+{"level":"INFO","timestamp":"2024-08-05T21:42:03.537+0700","caller":"initialize/run.go:12","msg":"Logger init success","info":"success"}
+{"level":"INFO","timestamp":"2024-08-05T21:42:03.614+0700","caller":"initialize/mysql.go:30","msg":"MySQL init success","info":"success"}
+{"level":"INFO","timestamp":"2024-08-05T21:42:03.765+0700","caller":"initialize/redis.go:46","msg":"score","score":"100"}
+{"level":"INFO","timestamp":"2024-08-05T21:42:22.666+0700","caller":"initialize/run.go:12","msg":"Logger init success","info":"success"}
+{"level":"INFO","timestamp":"2024-08-05T21:42:22.677+0700","caller":"initialize/mysql.go:30","msg":"MySQL init success","info":"success"}
+{"level":"INFO","timestamp":"2024-08-05T21:42:22.777+0700","caller":"initialize/redis.go:46","msg":"score","score":"100"}
