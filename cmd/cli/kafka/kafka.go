@@ -39,7 +39,7 @@ func getKafkaReader(kafkaURL, topic, groupID string) *kafka.Reader {
 		MinBytes:       10e3, // 10KB
 		MaxBytes:       10e6, // 10MB
 		CommitInterval: time.Second,
-		StartOffset:    kafka.FirstOffset,
+		StartOffset:    kafka.LastOffset,
 	})
 }
 
@@ -87,7 +87,7 @@ func actionStock(c *gin.Context) {
 }
 
 func RegisterConsumerATC(id int) {
-	kafkaGroupId := "consumer-group-"
+	kafkaGroupId := fmt.Sprintf("consumer-group-%d", id)
 	reader := getKafkaReader(kafkaURL, topic, kafkaGroupId)
 	defer reader.Close()
 
@@ -113,6 +113,8 @@ func main() {
 	// Register 2 user for buying stock in ATC
 	go RegisterConsumerATC(1)
 	go RegisterConsumerATC(2)
+	go RegisterConsumerATC(3)
+	go RegisterConsumerATC(4)
 
 	r.Run(":8999")
 }
