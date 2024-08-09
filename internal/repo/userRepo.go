@@ -1,12 +1,29 @@
 package repo
 
-type UserRepo struct {
+// type UserRepo struct {
+// }
+
+// func NewUserRepo() *UserRepo {
+// 	return &UserRepo{}
+// }
+
+// func (ur *UserRepo) GetInfoUser() string {
+// 	return "masterbi"
+// }
+
+// Interface Version
+type IUserRepo interface {
+	GetUserByEmail(email string) bool
 }
 
-func NewUserRepo() *UserRepo {
-	return &UserRepo{}
+type userRepo struct {
 }
 
-func (ur *UserRepo) GetInfoUser() string {
-	return "masterbi"
+// GetUserByEmail implements IUserRepo.
+func (u *userRepo) GetUserByEmail(email string) bool {
+	return true
+}
+
+func NewUserRepo() IUserRepo {
+	return &userRepo{}
 }
