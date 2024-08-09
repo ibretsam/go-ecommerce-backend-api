@@ -16,7 +16,7 @@ var (
 )
 
 const (
-	kafkaURL = "localhost:9092"
+	kafkaURL = "localhost:19092"
 	topic    = "VipUserTopic"
 )
 
